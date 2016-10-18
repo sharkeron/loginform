@@ -18,20 +18,25 @@
 }
 
 body {
-    background: #EBEBEB;
+    width: 1400px;
+    height: 900px;
+    background: url(../img/background.png);
+    background-size: 1400px 900px;
+    background-repeat: no-repeat;
 }
 
 .formbox {
+    display: inline-block;
     width: 500px;
     height: 500px;
-    margin: 100px auto;
+    margin: 100px 400px;
     padding-top: 5px;
 
     color: #fff;
-    background-image: url(../img/lines.png), url(../img/blue.png);
+    background-image: url(../img/background-2.png);
     background-repeat: no-repeat;
-    background-position: 30px 30px, 0 0;
-    background-size: 88%, 100%;
+    background-position: 50%;
+    background-size: 100%;
 
     font-family: "OpenSans regular";
     font-size: 12px;
@@ -65,6 +70,14 @@ h1 {
     padding-left: 20px;
 }
 
+.email_input:hover{
+    background: orange;
+}
+
+.pass_input:hover{
+    background: violet;
+}
+
 input:not([type="checkbox"]) {
     width: 200px;
     height: 35px;
@@ -77,8 +90,8 @@ input:not([type="checkbox"]) {
     padding-left: 10px;
 
     color: #EBEBEB;
-    border: 1px solid #0D2C52;
-    background-color: #1E4F8A;
+    border: 1px solid #956889;
+    background-color: #459856;
 
     font-size: 14px;
 }
@@ -92,8 +105,8 @@ input:not([type="checkbox"]) {
     padding-left: 10px;
 
     color: #EBEBEB;
-    border: 1px solid #0D2C52;
-    background-color: #1E4F8A;
+    border: 1px solid #458975;
+    background-color: #789652;
 
     font-size: 14px;
 }
@@ -121,7 +134,7 @@ input[type=checkbox] {
     vertical-align: bottom;
 }
 
-input[type=submit] {
+.submit {
     width: 100px;
     height: 40px;
     margin-top: -5px;
@@ -130,20 +143,20 @@ input[type=submit] {
     color: #fff;
     border: none;
     border-radius: 10px;
-    background-image: url(../img/login.png);
+    background: #998658;
 
     font-family: "OpenSans semibold";
     font-size: 15px;
 
     cursor: pointer;
 
-    box-shadow: 2px 2px #0D2C52;
+    box-shadow: 0px 0px #0D2C52;
 }
 
 .submit:hover {
-    background: rgba(230, 68, 26, 0.9);
+    background: rgba(26, 168, 226, 0.9);
     box-shadow:
-        0px 0px 55px #b2b806,
-        inset 1px 1px 42px #b2b806;
+        0px 0px 55px #598624,
+        inset 0px 0px 42px #786512;
     transform: scale(1.1);
 }
