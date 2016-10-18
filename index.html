@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
     <main>
         <div class="formbox">
-            <h1 class="cap">login</h1>
-            <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h1 class="cap"><i class="fa fa-asterisk" aria-hidden="true"></i>Registration form <i class="fa fa-asterisk" aria-hidden="true"></i></h1>
+            <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum.Lorem Ipsum</p>
             <form>
+                <button class="submit"><i class="fa fa-bell-o" aria-hidden="true"></i>LOGIN<i class="fa fa-bell-o" aria-hidden="true"></i></button>
+                <p class="email"><i class="fa fa-anchor" aria-hidden="true"></i>Username <i class="fa fa-anchor" aria-hidden="true"></i><input type="username" placeholder="Konstantin" name="username" class="email_input"></p>
+                <br>
                 <p class="email">Email:<input type="email" placeholder="email@email.com" name="email" class="email_input"></p>
                 <br>
                 <p class="pass">Password: <input type="password" placeholder="•••••••••••" name="pass" class="pass_input"></p>
                 <br>
+                <p class="pass">Password confirm: <input type="password" placeholder="•••••••••••" name="passconf" class="pass_input"></p>
+                <br>
                 <p class="check"><input type="checkbox" id="checkon"><label for="checkon"><span class="remme">Remember Me</span></label>
                     <a href="#">Forgot password?</a></p>
                 <br>
-                <input type="submit" value="LOGIN" class="submit">
+
             </form>
         </div>
     </main>
